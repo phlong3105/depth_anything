@@ -400,7 +400,7 @@ def get_config(model_name, mode='train', dataset=None, **overwrite_kwargs):
         if key in config:
             config[key] = bool(config[key])
 
-    # Model specific post processing of config
+    # Misc post processing of config
     parse_list(config, "n_attractors")
 
     # adjust n_bins for each bin configuration if bin_conf is given and n_bins is passed in overwrite_kwargs
